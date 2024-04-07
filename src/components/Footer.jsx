@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { generalContext } from "../contexts/GeneralContext";
 
-const Footer = ({ openDrawerEditable }) => {
+const Footer = () => {
+  const {toggleDrawer}=useContext(generalContext)
   const handleDrawerBtn = () => {
-    openDrawerEditable();
+    toggleDrawer();
   };
+  const handlePrintBtn=() => {
+    print();
+  }
   return (
     <footer className="py-3 flex print:hidden gap-2 justify-end mt-auto">
       <button
@@ -15,6 +20,7 @@ const Footer = ({ openDrawerEditable }) => {
         Manage Product
       </button>
       <button
+      onClick={handlePrintBtn}
         id="printBtn"
         className="px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >

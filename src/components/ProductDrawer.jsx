@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import ProductGroup from "./ProductGroup";
 import ProductInput from "./ProductInput";
-const ProductDrawer = ({ openDrawer, openDrawerEditable,products,addProduct }) => {
+import { generalContext } from "../contexts/GeneralContext";
+const ProductDrawer = () => {
+  const { openDrawer, toggleDrawer } = useContext(generalContext);
   const handleDrawerBtn = () => {
-    openDrawerEditable();
+    toggleDrawer();
   };
   return (
     <div
@@ -38,8 +40,8 @@ const ProductDrawer = ({ openDrawer, openDrawerEditable,products,addProduct }) =
           </svg>
         </button>
       </div>
-      <ProductGroup products={products} />
-      <ProductInput addProduct={addProduct} />
+      <ProductGroup  />
+      <ProductInput  />
     </div>
   );
 };

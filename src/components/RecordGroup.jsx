@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import RecordEmpty from "./RecordEmpty";
 import Record from "./Record";
+import { generalContext } from "../contexts/GeneralContext";
 
-const RecordGroup = ({ records,deleteRecord }) => {
+const RecordGroup = () => {
+  const{records}=useContext(generalContext)
   return (
     <>
       {records.length === 0 && <RecordEmpty />}
       {records.map((record, index) => (
-        <Record deleteRecord={deleteRecord} key={record.id} index={index} record={record} />
+        <Record  key={record.id} index={index} record={record} />
       ))}
     </>
   );
