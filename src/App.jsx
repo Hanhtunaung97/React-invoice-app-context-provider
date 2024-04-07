@@ -7,7 +7,7 @@ import Headers from "./components/Headers";
 
 const App = () => {
   return (
-    <div className="max-w-[700px] mx-auto min-h-screen flex flex-col">
+    <div className="max-w-[700px] mx-auto min-h-screen flex flex-col px-3 lg:p-0">
       <Headers />
       <SelectForm />
       <RecordTable />
