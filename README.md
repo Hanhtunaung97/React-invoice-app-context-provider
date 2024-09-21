@@ -1,8 +1,18 @@
-# React + Vite
+# My React Invoice App with props drilling using TailwindCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div>
+   <br/>
+   <a href=https://react-invoice-props-drilling.netlify.app/" target="_blank">
+   Click Here to See Demo 🕹️
+  </a>
+</div>
+<br/>
 
-Currently, two official plugins are available:
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React.js
+- flow bite
+- Vite
+- Tailwind CSS
+
+![e-commerce webpage](https://github.com/Hanhtunaung97/React-invoice-app-context-provider/blob/9322a931e6dcc32017c9f43d2a60888b54d79e44/public/img/landing%20photo.PNG)
