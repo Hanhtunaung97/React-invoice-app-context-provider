@@ -1,4 +1,4 @@
-# My React Invoice App with props drilling using TailwindCSS
+# My React Invoice App with Context Provider using TailwindCSS
 
 <div>
    <br/>
