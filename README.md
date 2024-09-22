@@ -8,7 +8,7 @@
 </div>
 <br/>
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+## <a>⚙️ Tech Stack</a>
 
 - React.js
 - flow bite
